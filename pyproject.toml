@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Sezione 2: Metadati del pacchetto (cosa installi)
+[project]
+name = "pyterminal"
+version = "0.0.1"
+authors = [
+    { name = "SamuGallo-06", email = "samu.gallicani@gmail.com" },
+]
+description = "Give color to terminal output and more..."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+keywords = ["terminal", "ansi", "colors", "cli", "clear"]
+
+dependencies = [
+        "requests",
+        "numpy>=1.20.0",
+]
+
+[project.scripts]
+pyterminal = "pyterminal.pyterminal:main"
+
+# (Opzionale) Link utili che appaiono su PyPI
+[project.urls]
+Homepage = "https://github.com/SamuGallo-06/pyterminal"
+"Bug Tracker" = "https://github.com/SamuGallo-06/pyterminal/issues"
+
+# Configurazione setuptools per progetto con layout "src/"
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pyterminal*"]
+
+# Se il codice è sotto src/, mappa la radice dei pacchetti su "src"
+[tool.setuptools]
+package-dir = {"" = "src"}
