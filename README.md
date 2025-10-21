@@ -38,7 +38,7 @@ Example snippets
     print(f"{underline('Path:')} {cyan('/home/user')}")
 
 API (common helpers)
-- Text styles: `bold(...)`, `italic(...)`, `underline(...)`, `dim(...)`, `reverse(...)`
+- Text styles: `bold(...)`, `italic(...)`, `underline(...)`
 - Foreground colors: `black(...)`, `red(...)`, `green(...)`, `yellow(...)`, `blue(...)`, `magenta(...)`, `cyan(...)`, `white(...)`
 - Background colors: `bg_black(...)`, `bg_red(...)`, `bg_green(...)`, ...
 - Utility: `clear()  # clear screen`
