@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/pyterminal/__init__.py
+src/pyterminal/pyterminal.py
+src/pyterminal.egg-info/PKG-INFO
+src/pyterminal.egg-info/SOURCES.txt
+src/pyterminal.egg-info/dependency_links.txt
+src/pyterminal.egg-info/top_level.txt
